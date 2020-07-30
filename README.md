@@ -1,7 +1,7 @@
 # Data-Mining
 Link Kaggle: <br>
 https://www.kaggle.com/spscientist/student-performance-in-exams/notebook <br>
-https://www.kaggle.com/vishnurapps/students-performance-in-exam/notebook <br>
+https://www.kaggle.com/vishnurapps/students-performance-in-exam/notebook
 
 Note: Code cd.py
 + Có 2 dòng ## là chưa chạy code và đang trong quá trình fix bug.
