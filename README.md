@@ -1,8 +1,8 @@
 # Data-Mining
 Link Kaggle: <br>
 https://www.kaggle.com/spscientist/student-performance-in-exams/notebook <br>
-https://www.kaggle.com/vishnurapps/students-performance-in-exam/notebook
-
-Note: Code cd.py
-+ Có 2 dòng ## là chua chay code và dang trong quá trình fix bug
-+ Cách 2 dòng là sang code n?i dung khác, còn cách m?t dòng thì v?n là n?i dung dó nhung tru?ng h?p khác.  
+https://www.kaggle.com/vishnurapps/students-performance-in-exam/notebook <bre>
+<br>
+Note: Code cd.py <br> 
++ CÃ³ 2 dÃ²ng ## lÃ  chÆ°a cháº¡y code vÃ  Ä‘ang trong quÃ¡ trÃ¬nh fix bug.
++ CÃ¡ch 2 dÃ²ng lÃ  sang code ná»™i dung khÃ¡c, cÃ²n cÃ¡ch má»™t dÃ²ng thÃ¬ váº«n lÃ  ná»™i dung Ä‘Ã³ nhung trÆ°á»ng há»£p khÃ¡c.  
