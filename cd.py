@@ -10,16 +10,166 @@ passmark = 40
 
 
 # Let us read the data from the csv file
-df = pd.read_csv("StudentsPerformance.csv")
+df = pd.read_csv("StudentsPerformance1.csv")
 
 
 # We will print top few rows to understand about the various data columns
 # print(df.head())
 
+#Cách 1
+# Peeking into data
+# print(df.columns)
 
+# print(df.head())
+
+# print(df.isnull().sum())
+
+# sns.distplot(df['math score'], bins=20, color='orange')
+# plt.show()
+
+# sns.catplot(y="gender",  kind="count", height=6, aspect=2, data=df);
+# plt.show()
+
+# print(df['gender'].value_counts(normalize=True) * 100)
+
+#
+# sns.catplot(x="test preparation course", y="math score", data=df, height=6, aspect=2, kind='swarm', hue='Over');
+# plt.show()
+
+# df['Math_PassStatus'] = np.where(df['math score']<passmark, 'Fail', 'Pass')
+# print(df.Math_PassStatus.value_counts())
+
+# sns.catplot(y="gender",  kind="count", height=4, aspect=2, data=df);
+# plt.show()
+
+# print(df['gender'].value_counts(normalize=True) * 100)
+
+
+# sns.catplot(y="gender", x="math score", data=df, height=5, aspect=2, kind='swarm', hue='Math_PassStatus');
+# plt.show()
+
+# sns.catplot(y="race/ethnicity",  kind="count", height=4, aspect=2, data=df);
+# plt.show()
+
+# print(df['race/ethnicity'].value_counts(normalize=True) * 100)
+
+# sns.catplot(y="parental level of education",  kind="count", height=4, aspect=2, data=df);
+# plt.show()
+
+# print(df['parental level of education'].value_counts(normalize=True) * 100)
+
+# sns.catplot(y="lunch",  kind="count", height=4, aspect=2, data=df);
+# plt.show()
+
+# print(df['lunch'].value_counts(normalize=True) * 100)
+
+# sns.catplot(y="test preparation course",  kind="count", height=4, aspect=2, data=df);
+# plt.show()
+
+# print(df['test preparation course'].value_counts(normalize=True) * 100)
+
+
+#Math
+
+# sns.distplot(df['math score'], bins=20, color='red')
+# plt.show()
+
+# df['Math_PassStatus'] = np.where(df['math score']<passmark, 'Fail', 'Pass')
+# print(df.Math_PassStatus.value_counts())
+#
+# df['Math_PassStatus'] = np.where(df['math score']<passmark, 'Fail', 'Pass')
+# sns.catplot(y="gender", x="math score", data=df, height=5, aspect=2, kind='swarm', hue='Math_PassStatus');
+# plt.show()
+
+# df['Math_PassStatus'] = np.where(df['math score']<passmark, 'Fail', 'Pass')
+# p = sns.countplot(x='parental level of education', data = df, hue='Math_PassStatus', palette='bright');
+# _ = plt.setp(p.get_xticklabels(), rotation=90)
+# plt.show()
+
+# df['Math_PassStatus'] = np.where(df['math score']<passmark, 'Fail', 'Pass')
+# p = sns.countplot(x='race/ethnicity', data = df, hue='Math_PassStatus', palette='bright');
+# _ = plt.setp(p.get_xticklabels(), rotation=90)
+# plt.show()
+
+# df['Math_PassStatus'] = np.where(df['math score']<passmark, 'Fail', 'Pass')
+# sns.catplot(x="math score", y="test preparation course", data=df, height=5, aspect=2, kind='swarm', hue='Math_PassStatus');
+# plt.show()
+
+# df['Math_PassStatus'] = np.where(df['math score']<passmark, 'Fail', 'Pass')
+# sns.catplot(x="lunch", y="math score", data=df, height=5, aspect=2, kind='swarm', hue='Math_PassStatus');
+# plt.show()
+
+
+# Reading
+
+# sns.distplot(df['reading score'], bins=20, color='green')
+# plt.show()
+
+# df['Reading_PassStatus'] = np.where(df['reading score']<passmark, 'F', 'P')
+# print(df.Reading_PassStatus.value_counts())
+
+# df['Reading_PassStatus'] = np.where(df['reading score']<passmark, 'F', 'P')
+# sns.catplot(y="gender", x="reading score", data=df, height=5, aspect=2, kind='swarm', hue='Reading_PassStatus');
+# plt.show()
+
+# df['Reading_PassStatus'] = np.where(df['reading score']<passmark, 'F', 'P')
+# p = sns.countplot(x='parental level of education', data = df, hue='Reading_PassStatus', palette='bright')
+# _ = plt.setp(p.get_xticklabels(), rotation=90)
+# plt.show()
+
+# df['Reading_PassStatus'] = np.where(df['reading score']<passmark, 'F', 'P')
+# p = sns.countplot(x='race/ethnicity', data = df, hue='Reading_PassStatus', palette='bright');
+# _ = plt.setp(p.get_xticklabels(), rotation=90)
+# plt.show()
+
+# df['Reading_PassStatus'] = np.where(df['reading score']<passmark, 'F', 'P')
+# sns.catplot(x="test preparation course", y="reading score", data=df, height=5, aspect=2, kind='swarm', hue='Reading_PassStatus');
+# plt.show()
+
+# df['Reading_PassStatus'] = np.where(df['reading score']<passmark, 'F', 'P')
+# sns.catplot(x="lunch", y="reading score", data=df, height=5, aspect=2, kind='swarm', hue='Reading_PassStatus');
+# plt.show()
+
+
+# Writing
+
+# sns.distplot(df['writing score'], bins=20, color='purple')
+# plt.show()
+
+# df['Writing_PassStatus'] = np.where(df['writing score']<passmark, 'F', 'P')
+# print(df.Writing_PassStatus.value_counts())
+
+# df['Writing_PassStatus'] = np.where(df['writing score']<passmark, 'F', 'P')
+# sns.catplot(y="gender", x="writing score", data=df, height=5, aspect=2, kind='swarm', hue='Writing_PassStatus');
+# plt.show()
+
+# df['Writing_PassStatus'] = np.where(df['writing score']<passmark, 'F', 'P')
+# p = sns.countplot(x='parental level of education', data = df, hue='Writing_PassStatus', palette='bright')
+# _ = plt.setp(p.get_xticklabels(), rotation=90)
+# plt.show()
+
+# df['Writing_PassStatus'] = np.where(df['writing score']<passmark, 'F', 'P')
+# p = sns.countplot(x='race/ethnicity', data = df, hue='Writing_PassStatus', palette='bright');
+# _ = plt.setp(p.get_xticklabels(), rotation=90)
+# plt.show()
+
+# df['Writing_PassStatus'] = np.where(df['writing score']<passmark, 'F', 'P')
+# sns.catplot(x="test preparation course", y="writing score", data=df, height=5, aspect=2, kind='swarm', hue='Writing_PassStatus');
+# plt.show()
+
+# df['Writing_PassStatus'] = np.where(df['writing score']<passmark, 'F', 'P')
+# sns.catplot(x="lunch", y="writing score", data=df, height=5, aspect=2, kind='swarm', hue='Writing_PassStatus');
+# plt.show()
+
+
+
+
+# Cách 2
 # Size of data frame
+# There are 1000 rows and 8 columns
+# Column headers are 'gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course', 'math score', 'reading score' and 'writing score'
+# There is no null columns
 # print(df.shape)
-
 
 # Let us understand about the basic information of the data, like min, max, mean and standard deviation etc.
 # print(df.describe())
@@ -52,7 +202,7 @@ df = pd.read_csv("StudentsPerformance.csv")
 
 
 # How many studends passed in reading ?
-# df['Reading_PassStatus'] = np.where(df['reading score']<passmark, 'F', 'P')
+# readingdf['Reading_PassStatus'] = np.where(df['reading score']<passmark, 'F', 'P')
 # print(df.Reading_PassStatus.value_counts())
 
 # # p = sns.countplot(x='parental level of education', data = df, hue='Reading_PassStatus', palette='bright')
@@ -93,7 +243,7 @@ df = pd.read_csv("StudentsPerformance.csv")
 # plt.show()
 
 
-# # Let us assign the grades
+# Let us assign the grades
 # Grading
 # above 80 = A Grade
 # 70 to 80 = B Grade
@@ -102,7 +252,7 @@ df = pd.read_csv("StudentsPerformance.csv")
 # 40 to 50 = E Grade
 # below 40 = F Grade ( means Fail )
 
-# def GetGrade(Percentage, OverAll_PassStatus):
+# # def GetGrade(Percentage, OverAll_PassStatus):
 #     if ( OverAll_PassStatus == 'F'):
 #         return 'F'
 #     if ( Percentage >= 80 ):
