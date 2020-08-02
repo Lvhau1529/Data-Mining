@@ -14,7 +14,7 @@ df = pd.read_csv("StudentsPerformance1.csv")
 
 
 # We will print top few rows to understand about the various data columns
-# print(df.head())
+print(df.head())
 
 #Cách 1
 # Peeking into data
